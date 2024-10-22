@@ -6,7 +6,8 @@ from linkedin_api import Linkedin
 app = Flask(__name__)
 
 # Initialize LinkedIn API with your credentials
-api = Linkedin("ratheepranjal449@gmail.com","Welcome@2?")
+api = Linkedin('ratheepranjal449@gmail.com', 'Welcome@2?')
+
 # Create an endpoint to get the company details
 @app.route('/get_company_details', methods=['POST'])
 def get_company_details() -> tuple:
